@@ -1,4 +1,4 @@
-# pong_game
+# pong_game_git
 🕹️ Horizontal Pong - Player vs Computer:
  A fun twist on classic Pong —
  Single-player mode: You vs simple Computer ;
