@@ -6,14 +6,13 @@ import turtle
 t = turtle.Turtle()
 s = turtle.Screen()
 s.bgcolor("black")
-s.colormode(255)  # Use 255-based RGB mode
+s.colormode(255) 
 t.speed(0)
 t.hideturtle()
 
-# Use RGB tuples for colors to avoid errors
 colors = [(255, 0, 0), (0, 0, 255)]  # red, blue
 
-# Show instructions on the screen
+
 t.penup()
 t.goto(0, 150)
 t.color("white")
@@ -23,10 +22,10 @@ t.write("1. Triangle   2. Square   3. Pentagon   4. Hexagon   5. Heptagon", alig
 t.goto(0, 90)
 t.write("6. Octagon   7. Nonagon   8. Decagon   9. 5-Point Star   10. 7-Point Star", align="center", font=("Arial", 14, "normal"))
 
-# Get input via turtle dialog
+
 choice = s.textinput("Shape Choice", "Enter your choice (1-10):")
 
-# Clear instructions before drawing
+
 t.clear()
 t.penup()
 t.goto(0, 0)
@@ -57,7 +56,7 @@ elif choice == "10":
 else:
     angle = 100         # Default if invalid input
 
-# Drawing loop
+
 for i in range(120):
     t.pencolor(colors[i % len(colors)])
     t.forward(i * 4)
@@ -65,6 +64,7 @@ for i in range(120):
 
 t.hideturtle()
 turtle.done()
+
 
 
 
