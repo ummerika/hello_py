@@ -1,8 +1,6 @@
 #git_shape_py
 
 import turtle
-
-# Setup
 t = turtle.Turtle()
 s = turtle.Screen()
 s.bgcolor("black")
@@ -11,8 +9,6 @@ t.speed(0)
 t.hideturtle()
 
 colors = [(255, 0, 0), (0, 0, 255)]  # red, blue
-
-
 t.penup()
 t.goto(0, 150)
 t.color("white")
@@ -22,9 +18,7 @@ t.write("1. Triangle   2. Square   3. Pentagon   4. Hexagon   5. Heptagon", alig
 t.goto(0, 90)
 t.write("6. Octagon   7. Nonagon   8. Decagon   9. 5-Point Star   10. 7-Point Star", align="center", font=("Arial", 14, "normal"))
 
-
 choice = s.textinput("Shape Choice", "Enter your choice (1-10):")
-
 
 t.clear()
 t.penup()
@@ -32,7 +26,6 @@ t.goto(0, 0)
 t.pendown()
 t.showturtle()
 
-# Use if-elif-else to assign angle
 if choice == "1":
     angle = 120         # Triangle
 elif choice == "2":
@@ -64,6 +57,7 @@ for i in range(120):
 
 t.hideturtle()
 turtle.done()
+
 
 
 
